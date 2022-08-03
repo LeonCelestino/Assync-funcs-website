@@ -1,0 +1,146 @@
+:root {
+    --bg-color: #010101;
+    --primary-color:  #05DBF2;
+    --secondary-color: #05F2F2;
+    --dark-color: #012611;
+
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+}
+html
+{
+    font-size: 62.4%;
+    font-family: 'Roboto', sans-serif;
+}
+
+#home
+{
+    position:  relative;
+    width: 100%;
+    min-height:  100vh;
+
+    background:  var(--bg-color);
+}
+
+#home header
+{
+    width:  100%;
+    padding-inline: 50px;
+    padding-block: 30px;
+}
+
+#home header nav
+{
+    display: flex;
+    justify-content: flex-end;
+}
+#home header nav ul
+{
+    display: flex;
+}
+
+#home header nav ul li
+{
+    margin-left: 5em;
+}
+
+#home header nav ul li a 
+{
+    display: block;
+
+    font-size:  2em;
+    font-weight: bold;
+    letter-spacing:  3px;
+    color:  var(--secondary-color);
+}
+
+#home header nav ul li a:hover
+{
+    color:  var(--primary-color);
+}
+
+#home main 
+{
+    position:  relative;
+    width: 100%;
+    height:  100%;
+    display:  flex;
+    justify-content:  space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+#home main .left-box-content
+{
+    width: 50em;
+    position:  relative;
+    
+}
+
+#home main .left-box-content h1
+{
+    font-size:  5rem;
+    letter-spacing:  10px;
+    line-height:  0.8;
+    color:  var(--primary-color);
+}
+#home main .left-box-content .h1-spans
+{
+    font-size:  10rem;
+    letter-spacing: 1px;
+    line-height:  1;
+    color:  var(--secondary-color);
+}
+
+#home main .left-box-content p
+{
+    margin-top:  2em;
+    font-size: 1.6rem;
+    font-weight:  bold;
+    letter-spacing:  2px;
+    line-height:  1.5;
+    color:  var(--secondary-color);
+
+}
+#home main .left-box-content a
+{
+    display:  block;
+    width:  8.4em;
+    padding:  1em;
+    margin-top:  3em;
+    background:  var(--primary-color);
+
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing:  3px;
+}
+#home main .right-box-content
+{
+    width:  60em;
+    height: 50em;
+    border-radius: 50% 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:  relative;
+    top:  50%;
+
+}
+
+#home main .right-box-content img
+{
+    position:  relative;
+    border-radius: 50% 25%;
+    max-width:  100%;
+    object-fit:  cover;
+}
